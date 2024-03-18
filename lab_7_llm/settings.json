@@ -1,8 +1,8 @@
 {
   "parameters": {
-    "model": "",
-    "dataset": "",
-    "metrics": []
+    "model": "XSY/albert-base-v2-imdb-calssification",
+    "dataset": "imdb",
+    "metrics": ["f1"]
   },
-  "target_score": 0
+  "target_score": 10
 }

@@ -40,6 +40,9 @@ class DatasetWorkingTest(unittest.TestCase):
 
         references = ReferenceAnalysisScores()
 
+        print(references.get(settings.parameters.dataset))
+        print(dataset_analysis)
+
         self.assertEqual(references.get(settings.parameters.dataset),
                          dataset_analysis)
 

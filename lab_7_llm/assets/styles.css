@@ -1,0 +1,76 @@
+:root {
+  --bg-color: #242424;
+  --shade-color: #393939;
+  --txt-color: #ffffff;
+  --highlight-color: #454545;
+  --press-color: #636363;
+}
+
+body {
+	font-family: "Noto Sans", sans-serif;
+	background-color: var(--bg-color);
+    color: var(--txt-color);
+    margin: auto;
+    padding: 0 40px;
+    max-width: 800px;
+    height: 100%;
+    display: table;
+	font-size: 120%;
+
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.wrapper {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+.button {
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: var(--shade-color);
+    font-weight: bold;
+    transition: 150ms linear;
+    display: inline-block;
+    border-width: 0px;
+    color: inherit;
+    font-size: inherit;
+    margin-top: 20px;
+}
+.button:hover {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: var(--press-color);
+    transition: 50ms linear;
+    cursor: pointer;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+.container {
+    text-align: center;
+}
+input {
+  border: 2px solid var(--press-color);
+  border-radius: 0.25rem;
+  transition: box-shadow 0.2s, border 0.2s;
+  text-align: center;
+  font-size: 150%;
+  font-family: inherit;
+  font-weight: bold;
+  font-style: italic;
+  width: 80%;
+  background-color: var(--bg-alt-color);
+  color: var(--txt-color);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0;
+}
